@@ -1,0 +1,20 @@
+{
+  "name": "cryptobot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "upload": "claudia create --profile tomek --region eu-west-1 --handler skill.handler --version skill",
+    "trigger": "claudia --profile tomek allow-alexa-skill-trigger --version skill"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alexa-message-builder": "^1.2.0",
+    "alexa-skill-kit": "^1.0.0",
+    "claudia": "^5.0.0",
+    "cryptocompare": "^0.5.0",
+    "node-fetch": "^2.1.2"
+  }
+}
